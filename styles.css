@@ -1668,8 +1668,9 @@ line-height: 140%; /* 1.4rem */
 
 .contact-features {
   display: grid;
-  grid-template-columns: 168px 168px;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
+  width: 100%;
 }
 
 .contact-feature {
@@ -1755,7 +1756,8 @@ line-height: 140%; /* 1.4rem */
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 242px;
+  width:100%;
+  max-width: 242px;
 }
 
 .footer-logo {
@@ -2191,7 +2193,6 @@ img[src] {
 
   .plans-grid .plan-card {
     flex: 1 1 calc(50% - 12px);
-    min-width: 280px;
   }
 
   .contact-content {
@@ -2396,5 +2397,26 @@ img[src] {
 
   .dashboard-sidebar {
     width: 90px;
+  }
+
+  .plans-header h2, .hero-title, .stats-header h2, .feature-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-title em, .crimson-title {
+    font-size: 1.9rem;
+    letter-spacing: 0;
+  }
+
+  .contact-features {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-content {
+    padding: 20px;
   }
 }
