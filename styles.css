@@ -2077,21 +2077,6 @@ line-height: 140%; /* 1.4rem */
   transition: color 0.3s ease;
 }
 
-.nav-links a::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--primary);
-  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.nav-links a:hover::after {
-  width: 100%;
-}
-
 /* Footer link hover */
 .footer-column a {
   transition: color 0.2s ease, transform 0.2s ease;
