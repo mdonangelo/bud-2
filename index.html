@@ -687,31 +687,9 @@
             </div>
           </div>
         </div>
-        <form class="contact-form">
-          <div class="form-group">
-            <label for="name">Nome</label>
-            <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
-          </div>
-          <div class="form-group">
-            <label for="email">E-mail corporativo</label>
-            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
-          </div>
-          <div class="form-group">
-            <label for="company">Empresa</label>
-            <input type="text" id="company" name="company" placeholder="Nome da sua empresa" required>
-          </div>
-          <div class="form-group">
-            <label for="employees">Número de colaboradores</label>
-            <select id="employees" name="employees" required>
-              <option value="">Selecione</option>
-              <option value="1-50">1-50</option>
-              <option value="51-200">51-200</option>
-              <option value="201-500">201-500</option>
-              <option value="500+">500+</option>
-            </select>
-          </div>
-          <button type="submit" class="btn btn-primary btn-lg btn-block">Agendar demonstração</button>
-        </form>
+        <div class="contact-form">
+          <iframe src='https://app.pipefy.com/public/form/eAS_AfxA?embedded=true' frameborder='0'></iframe>
+        </div>
       </div>
     </div>
   </section>
@@ -795,8 +773,6 @@
         '.companies, .stats, .feature-section, .plans, .testimonials, .contact'
       );
 
-      const animatedElements = document.querySelectorAll('.animate-on-scroll');
-
       // Intersection Observer options
       const observerOptions = {
         root: null,
@@ -820,7 +796,6 @@
 
       // Observe sections
       animatedSections.forEach(section => observer.observe(section));
-      animatedElements.forEach(element => observer.observe(element));
 
       // ============================================
       // COUNTER ANIMATION - Stats numbers
