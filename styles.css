@@ -39,6 +39,7 @@ body {
 }
 
 .container {
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 40px;
@@ -127,6 +128,7 @@ img {
 .btn-lg {
   padding: 14px 32px;
   font-size: 16px;
+  text-align: center;
 }
 
 .btn-block {
@@ -891,6 +893,7 @@ img {
   align-items: center;
   gap: 40px;
   padding: 8px 0;
+  max-width: 100%;
 }
 
 .company-logo {
@@ -1701,10 +1704,6 @@ line-height: 140%; /* 1.4rem */
   line-height: 140%;
 }
 
-.contact-form {
-  
-  padding: 32px;
-}
 
 .form-group {
   margin-bottom: 16px;
@@ -2292,6 +2291,14 @@ img[src] {
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
+  .hero-text, .hero-title {
+    text-align: center;
+  }
+
+  .plans {
+  padding: 40px 20px;
+  }
 }
 
 /* Small tablet / Large phone breakpoint */
@@ -2312,6 +2319,12 @@ img[src] {
   .mobile-menu {
     display: flex;
   }
+
+  .companies .container {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
 }
 
 /* Mobile breakpoint */
@@ -2326,12 +2339,6 @@ img[src] {
 
   .mobile-menu {
     padding: 24px 20px;
-  }
-
-  .companies .container {
-    flex-direction: column;
-    gap: 24px;
-    text-align: center;
   }
 
   .companies-logos {
@@ -2419,4 +2426,6 @@ img[src] {
   .footer-content {
     padding: 20px;
   }
+
+  
 }
